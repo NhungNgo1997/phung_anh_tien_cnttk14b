@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:text="Tên truyện"
+        android:textSize="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:id="@+id/singger"
+        android:text="Now Playing"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/picS"
+        android:layout_below="@+id/singger"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:src="@drawable/b1"
+        android:layout_height="300dp" />
+    <LinearLayout
+        android:id="@+id/grbtn"
+        android:layout_below="@+id/picS"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn-shuffle"
+            android:background="@drawable/shuffle"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn-loop"
+            android:background="@drawable/shuffle"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn-info"
+            android:background="@drawable/shuffle"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn-list"
+            android:background="@drawable/shuffle"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/grbtn"
+        android:id="@+id/grprogres"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/timeC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:layout_weight="1"
+            />
+        <ProgressBar
+            android:id="@+id/progres"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminateTint="#2DCC70"
+            android:indeterminateTintMode="src_in"
+            android:layout_weight="4"
+            android:indeterminate="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/timeE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/grprogres"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp">
+        <Button
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_shuffle_black_24dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_skip_previous_black_24dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn-play"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_play_circle_outline_black_24dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn-next"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_skip_next_black_24dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_loop_black_24dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</RelativeLayout>
